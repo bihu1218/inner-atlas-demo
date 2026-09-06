@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#061019">
 <title>本命天赋网页版</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='34'%3E✦%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/web/atlas.1ec5b8cf9ff9.css">
+<link rel="stylesheet" href="assets/web/atlas.803bad2820c4.css">
 </head>
 <body class="landing"><div id="startupStatus" role="status" hidden><span id="startupMessage">正在连接星图，稍等片刻…</span><button type="button" id="startupRetry">重新连接</button></div><script>(function(){var box=document.getElementById('startupStatus'),message=document.getElementById('startupMessage'),done=false;var timer=setTimeout(function(){if(!done)box.hidden=false;},4000);var slow=setTimeout(function(){if(!done){box.hidden=false;message.textContent='加载较慢，可以重新连接。';}},12000);window.AtlasBoot={ready:function(){done=true;clearTimeout(timer);clearTimeout(slow);box.hidden=true;document.documentElement.dataset.appReady='true';},failed:function(){if(!done){box.hidden=false;message.textContent='页面未能完整加载，请重新连接。';}}};document.getElementById('startupRetry').onclick=function(){var u=new URL(location.href);u.searchParams.set('retry',Date.now());location.replace(u.href);};window.addEventListener('error',function(e){if(e.target.tagName==='SCRIPT'||e.error)window.AtlasBoot.failed();},true);})();</script>
 <img loading="lazy" decoding="async" id="zodiacArtwork" src="assets/web/zodiac.85632dd38929.png" alt="" hidden>
@@ -14,7 +14,7 @@
 <a class="brand" href="#" aria-label="本命天赋首页"><span class="brand-symbol">✳</span><span>本命天赋<small>INNER ATLAS</small></span></a>
 <button id="menuToggle" class="secondary" aria-label="展开导航" aria-expanded="false">菜单 ☰</button>
 <nav aria-label="主导航">
-<button class="nav-item active" data-page="explore"><span>◈</span> 星图探索 <small>01</small></button>
+<button class="nav-item active" data-page="explore"><span>◈</span> 我的报告 <small>01</small></button>
 <button class="nav-item" data-page="assessment"><span>⌁</span> 完善建议 <small>02</small></button>
 <button class="nav-item" data-page="compare"><span>☷</span> 双人对照 <small>03</small></button>
 <button class="nav-item" data-page="growth"><span>↗</span> 成长记录 <small>04</small></button>
@@ -26,7 +26,13 @@
 <div class="sidebar-bottom"><div class="tiny-orbit">✧</div><p>认识自己，<br>从一次好奇开始。</p><span class="local-status"><i></i> 本地运行 · 无需登录</span></div>
 </aside>
 <div class="workspace">
-<header class="topbar"><div class="breadcrumb">探索空间 <span>/</span> <strong id="pageLabel">星图探索</strong></div><div class="top-actions"><span class="version">ATLAS / 5.0</span><button class="icon-button" id="motionToggle" aria-pressed="false" title="暂停装饰动效">动效开</button></div></header>
+<header class="topbar"><div class="breadcrumb"><button id="returnGalaxyHome" type="button">← 返回银河首页</button><span>/</span> <strong id="pageLabel">星图探索</strong></div><div class="top-actions"><span class="version">ATLAS / 5.0</span><button class="icon-button" id="motionToggle" aria-pressed="false" title="暂停装饰动效">动效开</button></div></header>
+<nav class="space-switcher" aria-label="四个探索空间">
+<button type="button" class="space-link" data-space="galaxy"><span aria-hidden="true">✧</span><span><strong>星座</strong><small>银河首页</small></span></button>
+<button type="button" class="space-link" data-space="ru"><span aria-hidden="true">儒</span><span><strong>儒家</strong><small>书院 · 修身</small></span></button>
+<button type="button" class="space-link" data-space="dao"><span aria-hidden="true">道</span><span><strong>道家</strong><small>云山 · 观势</small></span></button>
+<button type="button" class="space-link" data-space="fo"><span aria-hidden="true">佛</span><span><strong>佛学</strong><small>莲池 · 观心</small></span></button>
+</nav>
 <main id="main" tabindex="-1">
 <section id="explorePage" class="page">
 <div class="hero">
@@ -59,5 +65,5 @@
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <dialog id="aboutDialog"><button class="dialog-close secondary">关闭</button><span class="section-kicker">ABOUT INNER ATLAS</span><h2>好奇是入口，经历才是依据。</h2><p>银河与星座连线为艺术化视觉，不是实测天文星图。宇宙音乐为本地合成的原创氛围配乐，可随时暂停与调整音量。</p><p>生日画像沿用原版内置星座、数字和季节象征规则。本版本新增自评、对照、成长记录与导出，让探索过程更具体。</p><p>所有计算在本机进行，不调用外部模型。自评来自你的填写，未经过标准化测量；职业方向来自固定文本规则，不是市场调查或专业职业评估。</p><p>点击保存才会写入浏览器档案。你可以导出备份或删除单份档案；本页面无法同步其他浏览器的数据。</p></dialog>
 
-<script defer src="assets/web/app.c9755103b57b.js"></script>
+<script defer src="assets/web/app.d8d3f55fca53.js"></script>
 <noscript><p class="startup-noscript">请使用支持 JavaScript 的浏览器打开，启用后即可探索星图与每日修习。</p></noscript></body></html>
