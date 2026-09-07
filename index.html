@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#061019">
 <title>本命天赋网页版</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='34'%3E✦%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/web/atlas.8f91b948bf06.css">
+<link rel="stylesheet" href="assets/web/atlas.31f5eba358fb.css">
 </head>
 <body class="landing"><div id="startupStatus" role="status" hidden><span id="startupMessage">正在连接星图，稍等片刻…</span><button type="button" id="startupRetry">重新连接</button></div><script>(function(){var box=document.getElementById('startupStatus'),message=document.getElementById('startupMessage'),done=false;var timer=setTimeout(function(){if(!done)box.hidden=false;},4000);var slow=setTimeout(function(){if(!done){box.hidden=false;message.textContent='加载较慢，可以重新连接。';}},12000);window.AtlasBoot={ready:function(){done=true;clearTimeout(timer);clearTimeout(slow);box.hidden=true;document.documentElement.dataset.appReady='true';},failed:function(){if(!done){box.hidden=false;message.textContent='页面未能完整加载，请重新连接。';}}};document.getElementById('startupRetry').onclick=function(){var u=new URL(location.href);u.searchParams.set('retry',Date.now());location.replace(u.href);};window.addEventListener('error',function(e){if(e.target.tagName==='SCRIPT'||e.error)window.AtlasBoot.failed();},true);})();</script>
 <img loading="lazy" decoding="async" id="zodiacArtwork" src="assets/web/zodiac.85632dd38929.png" alt="" hidden>
@@ -65,5 +65,5 @@
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <dialog id="aboutDialog"><button class="dialog-close secondary">关闭</button><span class="section-kicker">ABOUT INNER ATLAS</span><h2>好奇是入口，经历才是依据。</h2><p>银河与星座连线为艺术化视觉，不是实测天文星图。宇宙音乐为本地合成的原创氛围配乐，可随时暂停与调整音量。</p><p>生日画像沿用原版内置星座、数字和季节象征规则。本版本新增自评、对照、成长记录与导出，让探索过程更具体。</p><p>所有计算在本机进行，不调用外部模型。自评来自你的填写，未经过标准化测量；职业方向来自固定文本规则，不是市场调查或专业职业评估。</p><p>点击保存才会写入浏览器档案。你可以导出备份或删除单份档案；本页面无法同步其他浏览器的数据。</p></dialog>
 
-<script defer src="assets/web/app.981f351136d6.js"></script>
+<script defer src="assets/web/app.a19b000e2ceb.js"></script>
 <noscript><p class="startup-noscript">请使用支持 JavaScript 的浏览器打开，启用后即可探索星图与每日修习。</p></noscript></body></html>
