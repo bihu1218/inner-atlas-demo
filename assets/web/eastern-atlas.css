@@ -1,0 +1,69 @@
+/* 东方星图 EASTERN CHART —— 自包含模块样式，跟随站点既有变量 */
+#eaPage{max-width:1080px;margin:0 auto}
+.eastern-form{display:grid;gap:14px;max-width:440px;margin:0 auto 24px}
+.eastern-form .field{display:grid;gap:6px}
+.eastern-form label{font-size:13px;color:var(--muted,#989ab4)}
+.eastern-form label span{opacity:.7;font-size:11px;margin-left:6px}
+.eastern-form input,.eastern-form select{background:var(--surface,#191c30);color:var(--ink,#f3f0ff);border:1px solid var(--line,#ffffff12);border-radius:10px;padding:10px 12px;font-size:15px}
+.eastern-form input:focus,.eastern-form select:focus{outline:2px solid var(--purple,#b7a8ff);outline-offset:1px}
+
+.eastern-top{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-bottom:16px}
+.eastern-soul h2{font-size:30px;margin:6px 0 8px}
+.eastern-soul #eaSoulDesc{color:var(--ink,#f3f0ff);opacity:.9}
+.eastern-usage p{font-size:13px;line-height:1.7;color:var(--muted,#989ab4)}
+
+.eastern-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:980px;margin:0 auto}
+.eastern-cell{background:var(--surface,#191c30);border:1px solid var(--line,#ffffff12);border-radius:14px;padding:12px 14px;min-height:96px;cursor:pointer;text-align:left;transition:border-color .2s,transform .2s;font:inherit;color:inherit}
+.eastern-cell:hover,.eastern-cell:focus-visible{border-color:var(--purple,#b7a8ff);transform:translateY(-2px)}
+.eastern-cell.active{border-color:var(--mint,#86d7cf);box-shadow:0 0 0 1px var(--mint,#86d7cf) inset}
+.ec-domain{display:block;font-size:11px;letter-spacing:.08em;color:var(--muted,#989ab4);margin-bottom:6px}
+.ec-star{display:block;font-size:17px;font-weight:600;color:var(--ink,#f3f0ff)}
+.ec-star .ec-borrow{font-size:11px;font-weight:400;color:var(--muted,#989ab4);margin-left:4px}
+.ec-tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.ec-tag{font-size:10px;padding:2px 8px;border-radius:999px;border:1px solid var(--line,#ffffff12);color:var(--muted,#989ab4)}
+.ec-tag.t-lu{color:var(--mint,#86d7cf);border-color:var(--mint,#86d7cf)}
+.ec-tag.t-quan{color:var(--gold,#d4b788);border-color:var(--gold,#d4b788)}
+.ec-tag.t-ke{color:var(--purple,#b7a8ff);border-color:var(--purple,#b7a8ff)}
+.ec-tag.t-ji{color:var(--muted,#989ab4);border-style:dashed}
+.ec-tag.t-pro{color:var(--gold,#d4b788);border-color:var(--gold,#d4b788)}
+.ec-tag.t-body{color:var(--gold,#d4b788);border-color:var(--gold,#d4b788)}
+.ec-tag.t-aux{color:var(--ink,#f3f0ff);opacity:.75}
+.ec-pot{font-style:normal;font-size:10px;color:var(--muted,#989ab4);border:1px solid var(--line,#ffffff12);border-radius:6px;padding:0 4px;margin-left:4px;vertical-align:1px}
+.ed-links{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
+.ed-link{background:none;border:1px solid var(--purple,#b7a8ff);color:var(--purple,#b7a8ff);border-radius:999px;padding:4px 14px;cursor:pointer;font-size:13px}
+.ed-link:hover{background:rgba(183,168,255,.12)}
+.ea-teaser{opacity:.85}
+.ea-cta button{margin:10px 0 6px}
+.ea-pay-list{margin:10px 0;padding-left:18px;line-height:1.9;font-size:14px}
+.ea-qr{width:180px;height:180px;border:1px dashed var(--muted,#989ab4);border-radius:12px;display:grid;place-content:center;text-align:center;color:var(--muted,#989ab4);font-size:12px;margin:12px auto;line-height:1.7}
+.ea-qr-real{border-style:solid;padding:6px;background:#fff}
+.ea-qr-real img{width:100%;height:100%;object-fit:contain;border-radius:8px;display:block}
+.ea-pay-row{display:flex;gap:10px;margin-top:8px}
+.ea-pay-row input{flex:1;background:var(--surface,#191c30);color:var(--ink,#f3f0ff);border:1px solid var(--line,#ffffff12);border-radius:10px;padding:10px 12px;font-size:14px}
+#eaPayDialog{background:var(--surface,#191c30);color:var(--ink,#f3f0ff);border:1px solid var(--line,#ffffff12);border-radius:16px;max-width:430px;width:92%;padding:22px}
+#eaPayDialog::backdrop{background:rgba(3,7,18,.72)}
+
+.eastern-center{grid-row:2/4;grid-column:2/4;background:linear-gradient(160deg,rgba(183,168,255,.14),rgba(134,215,207,.07) 55%,transparent);border:1px solid var(--line,#ffffff12);border-radius:14px;display:grid;place-content:center;text-align:center;padding:18px;min-height:96px}
+.eastern-center .ec-kicker{font-size:11px;letter-spacing:.14em;color:var(--muted,#989ab4)}
+.eastern-center .ec-big{font-size:34px;font-weight:700;margin:8px 0 6px;background:linear-gradient(120deg,var(--purple,#b7a8ff),var(--gold,#d4b788));-webkit-background-clip:text;background-clip:text;color:transparent}
+.eastern-center .ec-sub{font-size:13px;color:var(--muted,#989ab4);max-width:280px}
+
+.eastern-detail{margin-top:16px;max-width:980px;margin-left:auto;margin-right:auto}
+.eastern-detail h3{font-size:20px;margin:4px 0 10px}
+.eastern-detail .ed-block{margin:10px 0}
+.eastern-detail .ed-label{font-size:12px;letter-spacing:.1em;color:var(--muted,#989ab4);display:block;margin-bottom:4px}
+.eastern-detail .ed-action{border-left:3px solid var(--mint,#86d7cf);padding:8px 12px;background:rgba(134,215,207,.06);border-radius:0 10px 10px 0}
+.eastern-note{text-align:center;margin-top:18px}
+
+#eaNav small{opacity:.6;font-size:10px;margin-left:2px}
+
+@media (max-width:720px){
+.eastern-top{grid-template-columns:1fr}
+.eastern-grid{gap:6px}
+.eastern-cell{padding:8px;min-height:72px;border-radius:10px}
+.ec-domain{font-size:9px;margin-bottom:3px}
+.ec-star{font-size:13px}
+.ec-tag{font-size:9px;padding:1px 6px}
+.eastern-center .ec-big{font-size:22px}
+.eastern-center .ec-sub{font-size:11px;max-width:150px}
+}
